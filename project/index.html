@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="main-block">
+        <form class="menu" action="">
+            <div class="menu__players-block">
+                <h2 class="menu__title"><em>Select the number of players</em></h2>
+                <input id="players" class="menu__input" type="number" min="2" max="5" value="1" required>
+            </div>
+
+            <div class="menu__tiles-block">
+                <h2 class="menu__title"><em>Select the number of tiles</em></h2>
+                <input id="tiles" class="menu__input" type="number" min="4" max="90" value="16" required>
+            </div>
+
+            <div class="menu__start">
+                <button id="gameStartBtn" class="menu__btn"><em>Play</em></button>
+                <h2 class="menu__title"><em>Timer</em> <input id="timerCheck" type="checkbox"></h2>
+            </div>
+        </form>
+
+        <div class="game-block">
+            <div class="players-block">
+            </div>
+            <div>
+                <div class="game__timer">
+                    <em class="game__timer-title">60s</em>
+                </div>
+                <div class="container"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
